@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-
+var useragent = require('express-useragent');
 const calculateStreamer = require("../backend/calculate_streamer");
 const createStreamer = require("../backend/create_streamer");
 const {LoadLanguageJSON, getText} = require("../backend/localizations/localization");
@@ -9,7 +9,10 @@ const {Quiz} = require("../backend/quiz_questions");
 
 // Home/Main quiz page
 router.get("/", (req, res) => {
-  res.render("index");
+  //const isMobile = req.useragent['isMobile'];
+  const isMobile = true;
+  //res.render(isMobile ? "pages/mobile" : "pages/index");
+  res.render(isMobile? "index-mobile":"index");
 });
 
 // renders the html for the quiz and most of the page
@@ -18,6 +21,25 @@ router.post('/getHtml', function(req, res){
   console.log(`rendering html for ${LANGUAGE_TO_GET}`);
   const onLangLoaded = (result, error)=>{ 
     res.render("./full_page", {
+      // quiz questions we need to render the quiz html
+      Quiz,
+      // our function to get texts (pre-loaded with our language's text)
+      getText: getText(result.Texts),
+      // languages available
+      Languages:result.Languages,
+      // the language we use
+      ThisLang: LANGUAGE_TO_GET,
+    });
+  }
+  LoadLanguageJSON(LANGUAGE_TO_GET, onLangLoaded)
+});
+
+// renders the html for the quiz and most of the page
+router.post('/getHtmlMobile', function(req, res){
+  let LANGUAGE_TO_GET = req.body.language;
+  console.log(`rendering html for ${LANGUAGE_TO_GET}`);
+  const onLangLoaded = (result, error)=>{ 
+    res.render("./full_page-mobile", {
       // quiz questions we need to render the quiz html
       Quiz,
       // our function to get texts (pre-loaded with our language's text)

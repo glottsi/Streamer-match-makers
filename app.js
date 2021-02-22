@@ -1,7 +1,7 @@
 var express = require("express");
 var path = require("path");
 var logger = require("morgan");
-
+var useragent = require('express-useragent');
 var indexRouter = require("./routes/index");
 
 var app = express();
@@ -9,6 +9,7 @@ var app = express();
 // app config
 app.use(logger("dev"));
 app.use(express.json());
+app.use(useragent.express());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 

@@ -272,6 +272,7 @@ function restartQuiz() {
   $(`#main-container`).removeClass("wide-container");
   // get rid of unwanted effects
   $(`*`).removeClass(`fade-out`);
+  $(`#detective-row`).show();
   // rerender fresh quiz HTML
   getPageHTML();
 }
@@ -351,7 +352,8 @@ function calculateQuizResult() {
           $streamerRevealContainer.show();
         } else {
           console.log(data.Results);
-          $(`#main-container`).addClass("wide-container");
+        //  $(`#main-container`).addClass("wide-container");
+          $(`#detective-row`).hide();
           displayStreamerResults(data.Results);
           $streamerRevealContainer.addClass("fade-in");
           $streamerRevealContainer.show();

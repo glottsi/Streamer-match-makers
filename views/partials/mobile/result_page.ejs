@@ -6,31 +6,34 @@
     <div class="row mb-3 justify-content-center">
     <h3><%=getText('results-subtitle') %></h3>
     </div>
-    <div class="row mb-3 justify-content-center">
-    <div class="col">
-    <div class="streamer-info-container others">
-        <%- include("./secondary_result",{ rank:2 }) %>
-    </div>
-  </div>
-  <div class="col">
-    <div class="streamer-info-container others">
-        <%- include("./secondary_result",{ rank:3}) %>
-    </div>
-  </div>
+    <div class="row">
       <div class="col justify-content-center">
         <%- include("./first_place_result") %>
       </div>
+    </div>
+    <div class="row">
       <div class="col">
+        <div class="streamer-info-container others">
+            <%- include("./secondary_result",{ rank:2 }) %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="streamer-info-container others">
+        <%- include("./secondary_result",{ rank:3}) %>
+    </div>
+    </div>
+    <div class="row">
       <div class="streamer-info-container others">
         <%- include("./secondary_result",{ rank:4 }) %>
       </div>
     </div>
-    <div class="col">
+    <div class="row">
       <div class="streamer-info-container others">
         <%- include("./secondary_result",{ rank:5 }) %>
       </div>
     </div>
-    </div>
+   
     <div class="row">
     <div class="col"></div>
     <div class="col" style="text-align:center;">

@@ -97,7 +97,7 @@ const QuestionTypeSettings = {
     {
       unique_question_identifier: "chat-vibe",
       question_type: QuestionTypes.Buttons.MultipleSelection,
-      disableContinueButtonByDefault: false,
+      disableContinueButtonByDefault: true,
       buttonsPerRow: 5,
       answer_settings: [
         "chatty",

@@ -114,9 +114,19 @@
   }
   
   .crown {
+    display: inline-block;
+    left: -52px;
+    top: -45px;
     position: absolute;
-    top: -96px;
-    right: -96px;
+  }
+
+  .crown img {
+    height: 70px;
+    transform: rotate(-45deg)
+  }
+
+  #main-container {
+    overflow-y: auto;
   }
   
   .socials-container{
@@ -135,6 +145,7 @@
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
+    width: 100%;
   }
   .dropdown-item-container {
     padding-left: 4px;
@@ -363,12 +374,6 @@
   
   #start-quiz-button {
     margin-top: 48px;
-  }
-  
-  #dark-mode-toggle {
-    position: absolute;
-    right: 0;
-    margin-right: 24px;
   }
   
   #dark-mode-toggle-icon {

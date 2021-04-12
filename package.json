@@ -3,14 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "prettify": "npx prettier --write ."
   },
   "dependencies": {
-    "@radix-ui/react-slider": "^0.0.5",
-    "@reach/dialog": "^0.13.2",
-    "@reach/visually-hidden": "^0.13.2",
     "axios": "^0.21.1",
     "cls-hooked": "^4.2.2",
     "d3-dsv": "^2.0.0",

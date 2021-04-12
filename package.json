@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start-next": "next start",
-    "start": "nodemon ./bin/www",
+    "start": "node app.js",
     "prettify": "npx prettier --write ."
   },
   "dependencies": {

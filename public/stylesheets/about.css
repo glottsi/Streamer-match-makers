@@ -1,0 +1,374 @@
+body {
+  overflow: auto;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.ure_funny {
+    max-width: 1440px;
+}
+.offsetText_hotshot { 
+    transform: translate(-50%,0); 
+}
+
+.about {
+    /* About us */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10vw;
+  text-align: center;
+  color: rgba(113, 2, 115, 0.2);
+
+}
+
+.about_small {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4vw;
+  position: absolute;
+  bottom: 0;
+  color: #363636;
+  width: 100%;
+  left: 50%;
+}
+
+
+/* image 106 */
+.mainvideo {
+  margin:auto; 
+}
+
+.mainvideo img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.about-twiri-row .people-image {
+  max-width: 80px;
+}
+
+.about-twiri-row .popup-image {
+  max-width: 80px;
+}
+
+.about-twiri-row .abouttwiri {
+  padding-top: 0.5em;
+}
+
+.row-achievement .col-achievement {
+  min-width: 200px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.abouttwiri_old {
+/* About Twiri */
+width: 1029px;
+height: 130px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+align-items: center;
+padding: 1em;
+color: #131212;
+}
+
+
+.rectangle {
+background: #FFFFFF;
+box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+margin: 25px 15px;
+margin-bottom: 2ex;
+}
+
+.aboutus_img1 {
+background: url(info.png);
+}
+
+.achievement {
+    /* ACHIEVMENTS */
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 60px;
+/* identical to box height, or 86% */
+display: flex;
+align-items: center;
+padding-top: 1em;
+
+color: #FFFFFF;
+}
+
+.background {
+/* Rectangle 39 */
+width:100%;
+margin-top: 3em;
+background: #670269;
+}
+
+.proudof {
+    /* We are proud of */
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 28px;
+/* or 93% */
+display: flex;
+align-items: center;
+text-align: center;
+margin: 25px 15px;
+margin-bottom: 2ex;
+color: #FFFFFF;
+}
+
+.largenumber {
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+/* identical to box height, or 75% */
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+justify-content: space-evenly;
+color: #FFFFFF;
+}
+
+.largetext {
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+/* identical to box height, or 240% */
+display: flex;
+letter-spacing: 0.05em;
+justify-content: space-evenly;
+
+color: #FFFFFF;
+}
+
+.smalltext {
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+/* identical to box height, or 300% */
+display: flex; 
+letter-spacing: 0.05em;
+margin-bottom: 3rem;
+justify-content: space-evenly;
+
+color: #FDC510;
+
+}
+.events_ron {
+  /* Events */
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 60px;
+/* identical to box height, or 86% */
+display: flex;
+align-items: center;
+margin-top: 3rem;
+margin-bottom: 2rem;
+color: #000000;
+justify-content:center;
+
+}
+
+.video_subtitle {
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 60px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+justify-content:center;
+padding: 1em;
+
+color: #FFFFFF;
+
+}
+ /*timeline look from Hooyaz*/
+ .timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    background: #DDDDDD;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  .timelinecontainer {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+  }
+  
+  .timelinecontainer.left {
+    left: 0;
+  }
+  
+  .timelinecontainer.right {
+    left: 50%;
+  }
+  
+  .timelinecontainer::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: calc(50% - 8px);
+    right: -18px;
+    background: #670269;
+    border: 6px solid #DDDDDD;
+    border-radius: 16px;
+    z-index: 1;
+    box-shadow: 5px 5px 5px #999;
+  }
+  
+  .timelinecontainer.right::after {
+    left: -14px;
+  }
+  
+
+  
+  .timelinecontainer.right::before {
+    left: 8px;
+  }
+  
+  .timelinecontainer .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 2px);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
+  
+  .timelinecontainer.left .date {
+    right: -100px;
+  }
+  
+  .timelinecontainer.right .date {
+    left: -100px;
+  }
+  
+
+  
+  .timelinecontainer.left .icon {
+    right: 56px;
+  }
+  
+  .timelinecontainer.right .icon {
+    left: 56px;
+  }
+  
+  .timelinecontainer .content {
+    padding: 30px;
+    background: #FFFFFF;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #999999, -1px -1px 5px #EFEFEF;
+    left: -50px;
+  }
+
+  .timelinecontainer.right .content {
+    left: 50px;
+  }
+  
+  
+  .timelinecontainer .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: normal;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .timelinecontainer .content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+  }
+  
+  @media (max-width: 767.98px) {
+    .timeline::after {
+      left: 90px;
+    }
+  
+    .timelinecontainer {
+      width: 100%;
+      padding-left: 120px;
+      padding-right: 30px;
+    }
+  
+    .timelinecontainer.right {
+      left: 0%;
+    }
+  
+    .timelinecontainer.left::after, 
+    .timelinecontainer.right::after {
+      left: 82px;
+    }
+  
+    .timelinecontainer.left::before,
+    .timelinecontainer.right::before {
+      left: 100px;
+      border-color: transparent #006E51 transparent transparent;
+    }
+  
+    .timelinecontainer.left .date,
+    .timelinecontainer.right .date {
+      right: auto;
+      left: 15px;
+    }
+  
+    .timelinecontainer.left .icon,
+    .timelinecontainer.right .icon {
+      right: auto;
+      left: 146px;
+    }
+  
+    .timelinecontainer.left .content,
+    .timelinecontainer.right .content {
+      padding: 30px 30px 30px 90px;
+      border-radius: 500px 0 0 500px;
+    }
+  }

@@ -1,18 +1,205 @@
 ﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <%- include ("./partials/stylesheets") %>
-  </head>
-  <body id="full-page" class="<% Theme %>">
-    <main role="main" class="container d-flex justify-content-center">
-      <div class="welcome-container">
-        <p style="font-size: 100px; font-weight: bold;">About</p>
-        <p style="font-size: 30px;">We are:</p>
-        <p style="font-size: 30px;">someone someone ...</p>
+<head>
+  <link href="../stylesheets/about.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <%- include ("./partials/stylesheets") %>
+  <link href="/stylesheets/about.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+</head>
+<!-- pink circle <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M432.9 320C432.9 382.31 382.31 432.9 320 432.9C257.69 432.9 207.1 382.31 207.1 320C207.1 257.69 257.69 207.1 320 207.1C382.31 207.1 432.9 257.69 432.9 320Z" id="a3OQc4AZJf"/></defs><g><g><g><use xlink:href="#a3OQc4AZJf" opacity="1" fill="#ff8fe7" fill-opacity="1"/></g></g></g></svg> -->
+<body id="full-page" class="<%= Theme %>">
+  <%- include ("./partials/header",{
+      BrandName: getText('logoText'),
+      thisLang: ThisLang,
+      Languages, 
+  }) %>
+  <main id="aboutpage-main-container">
+    <div class="aboutus-container container-fluid justify-content-center">
+      <div class="container-fluid" style="max-width: 60%; margin: 0 auto;">
+        <div class="row" style="position: relative;">
+            <div class="text-center about" style="width: 100%;">
+              About Us
+            </div>
+            <div class="text-center offsetText_hotshot about_small" aria-hidden="true">
+              About Us
+            </div>
+        </div>
       </div>
-  </body>
+      <div class="container-fluid" style="max-width: 60%;">
+        <div class="row mainvideo mt-3">
+          <img class="about-image" src="/images/about.png">
+        </div>
+      </div>
+      <div class="container-fluid" style="max-width: 70%;">
+        <div class="row rectangle about-twiri-row d-flex justify-content-center">
+          <div class="col-4 col-lg-2 d-flex justify-content-center"> 
+            <img class="people-image w-100 h-100 p-2" src="/images/people.svg">
+          </div>
+          <div class="col-12 col-lg-10 abouttwiri">
+            This is a webpage that matches the users to a Streamer to watch or collab with based on the question for your preference.
+            The questions will be regarding the characteristics and nature of the streamer and the stream.
+          </div>
+        </div>
+        <div class="row rectangle about-twiri-row d-flex justify-content-center">
+          <div class="col-4 col-lg-2 d-flex justify-content-center">
+            <img class="popup-image w-100 h-100 p-2" src="/images/popup.svg">
+          </div>
+          <div class="col-12 col-lg-10 abouttwiri">
+            JinriTV is an amazing streamer who programs for hours and enjoys working with interns.
+            They also love to contribute by giving great ideas and good information regarding her stream. Please follow her
+            on Twitch.tv/jinritv
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid background">
+      <div class="row achievement text-center">
+        <div class="col">
+          Achievement
+        </div>
+      </div>
+      <div class="row proudof text-center">
+        <div class="col">
+          We are proud of
+        </div>
+      </div>
+      <div class="row row-achievement text-center justify-content-center">
+        <div class="col-2 col-achievement">
+          <!--
+              we need to make a new file called achievement.ejs
+            -->
+          <%- include("./partials/achievement", { number: 20, title: "Users" , subtitle: "Daily" }) %>
+
+        </div>
+        <div class="col-2 col-achievement">
+          <%- include("./partials/achievement", { number: 43, title: "Contributors" , subtitle: "Overall" }) %>
+        </div>
+        <div class="col-2 col-achievement">
+          <%- include("./partials/achievement", { number: 152, title: "Viewers" , subtitle: "per Stream" }) %>
+        </div>
+        <div class="col-2 col-achievement">
+          <%- include("./partials/achievement", { number: 2437, title: "Matches" , subtitle: "all in all" }) %>
+        </div>
+        <div class="col-2 col-achievement">
+          <%- include("./partials/achievement", { number: "5⭐" , title: "Star Rating" , subtitle: "everywhere" }) %>
+        </div>
+      </div>
+    </div>
+    <!-- This is @HOOYAZ, DON'T TOUCH THIS-->
+    <div class="container-fluid events_ron ure_funny">
+      <div class="row">
+        Events
+      </div>
+    </div>
+    <div class="container">
+      <div class="timeline">
+        <div class="timelinecontainer left">
+          <div class="date">15 Dec</div>
+          <i class="icon fa fa-home"></i>
+          <div class="content">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
+              pretium.
+            </p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="date">22 Oct</div>
+          <i class="icon fa fa-gift"></i>
+          <div class="content">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
+              pretium.
+            </p>
+          </div>
+        </div>
+        <div class="timelinecontainer left">
+          <div class="date">10 Jul</div>
+          <i class="icon fa fa-user"></i>
+          <div class="content">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
+              pretium.
+            </p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="date">18 May</div>
+          <i class="icon fa fa-running"></i>
+          <div class="content">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
+              pretium.
+            </p>
+          </div>
+        </div>
+        <div class="timelinecontainer left">
+          <div class="date">10 Feb</div>
+          <i class="icon fa fa-cog"></i>
+          <div class="content">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
+              pretium.
+            </p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="date">01 Jan</div>
+          <i class="icon fa fa-certificate"></i>
+          <div class="content">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper
+              pretium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid background">
+      <div class="row achievement text-center">
+        <div class="col">
+          More Videos
+        </div>
+      </div>
+      <div class="row">
+        <div class="col video_subtitle">
+          Streamer React on TWIRI
+        </div>
+        <div class="col video_subtitle">
+          Jinri Talks about TWIRI
+        </div>
+        <div class="col video_subtitle">
+          Viewers react on TWIRI
+        </div>
+      </div>
+    </div>
+  </main>
+  <%- include ("./partials/footer",{
+      CopyrightText:  getText('copyright-text'),
+      About:  getText('footer-about'),
+      Submit:  getText('footer-submit'),
+      Contribute:  getText('footer-contribute'),
+      DarkMode:  getText('dark-mode-label')
+  }) %>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="/javascripts/bootstrap-slider.min.js"></script>
+<script src="/javascripts/custom-theme.js"></script>
+<script src="/javascripts/text-handling.js"></script>
+<script src="/javascripts/about.js"></script>
 </html>

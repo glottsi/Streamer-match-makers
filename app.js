@@ -4,7 +4,6 @@ var logger = require("morgan");
 var session = require("cookie-session");
 
 var indexRouter = require("./routes/index");
-var aboutRouter = require("./routes/about");
 
 var app = express();
 
